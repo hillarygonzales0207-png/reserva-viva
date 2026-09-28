@@ -1,0 +1,459 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container { 
+    display: grid;
+    grid-template-areas: 
+        'logo link link link'
+        'img img img img';
+    height: 100vh;
+    grid-template-rows: 80px minmax(0, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.logo {
+    grid-area: logo;
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 25px;.
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.links {
+    display: grid;
+    grid-area: link;
+    grid-template-columns: repeat(5, auto);
+    padding: 10px;
+    gap: 70px;
+    justify-content: start;
+    align-items: center;
+}
+
+.links a { 
+    text-decoration: none; 
+    color: rgba(255, 255, 255, 0.729); 
+    font-family: 'Raleway', sans-serif; 
+    font-size: 25px; 
+    font-weight: 600;  
+    font-style: normal; 
+}
+
+.box2 {
+    grid-area: img;
+    min-height: 0;
+}
+
+.box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.container div {
+    background-color: #0d9f28;
+    text-align: center;
+    font-size: 26px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.links .boton-entradas {
+    background-color: #fd000d;
+    padding: 5px 5px;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    transition: background-color 0.2s ease;
+    color: white;
+}
+
+.links .boton-entradas:hover {
+    background-color: #dd2831;  
+    cursor: pointer;
+}
+
+h2 {
+    color: #78ff95;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    }
+
+p{
+ color: #fdfdfd;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+.container2 {
+    display: grid;
+    grid-template-areas: 
+        'logo link link link';
+    height: 80px;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #0d9f28;
+}
+
+.visitanos {
+    padding-top: 140px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: calc(100vh - 60px);
+    gap: 0;
+    background-color: #037527;
+}
+
+.visitanos div {
+    background-color: #037527;
+    padding: 20px;
+}
+
+.visitanos h2 {
+    margin-bottom: 15px;
+}
+
+.visitanos p {
+    margin-bottom: 30px;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.botones button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    border: 3px solid #78ff95;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.sobre-nosotros{
+    background-color: #acf962;
+    display: flex;
+    flex-direction: column;
+    grid-template-areas: 
+        'logo link link link';
+   
+    grid-template-columns: repeat(4, 1fr);
+    height: 100vh;
+  
+}
+
+h3{
+    color: #047717;
+    font-size: 55px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+h4{
+    font-family: 'dacherry';
+    src: url('tipografia/dacherry.zip');
+    font-size: 65px;
+    text-align: center;
+    color: #047717;
+    font-weight: 100;
+}
+
+h5{
+    color: #494949;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.cuadros {
+    display: flex;
+    gap: 20px;
+}
+
+.cuadro1,
+.cuadro2 {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.titulo{
+    padding: 10px;
+    margin: 30px
+}
+
+.subtexto{
+  padding: px;
+  margin: 0px, 30px, 0px, 30px
+}
+
+.cuadro1{
+    background-color: #00ce27;
+    padding: 5px 5px;
+    margin: 50px;
+    width: 10px;
+    height: 160px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+    }
+
+h4 .frase-color {
+    color: white;
+}
+
+.cuadro2{
+    background-color: #00ce27;
+    padding: 5px 5px;
+    margin: 50px;
+    width: 10px;
+    height: 160px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+    }
+
+.animales {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.jaguar {
+    width: 100%;
+    height: 100%;
+}
+
+.jaguar img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.cuadro-jaguar {
+    position: absolute;
+
+    bottom: 90px;
+    left: 40px;
+
+    width: 500px;
+    padding: 40px;
+
+    background-color: rgba(1, 102, 43, 0.568);
+
+    text-align: center;
+    box-sizing: border-box;
+  
+}
+
+.blanco {
+    color: white;
+}
+
+p i {
+    color: white;
+    margin-right: 8px;
+}
+
+h2 img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 8px;
+    color: white;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.entrada {
+    display: flex;
+    align-items: center;
+}
+
+.asterisco {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.entrada input,
+.entrada select {
+    height: 30px;
+    flex: 1;
+    border: 1px solid black;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.seccion-curso {
+    background-color: #0d9f28;
+}
+.seccion-curso {
+    background-color: #006b08;
+    color: white;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding: 10px 60px 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.curso.titulo h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin: 0 0 5px;
+}
+
+.blanco {
+    color: #d8ffb8;
+}
+
+.curso.texto h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 1250px;
+    margin: 0 auto 25px;
+}
+
+.duración {
+    margin-bottom: 30px;
+}
+
+.duración h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.duración p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    margin: 5px 0 0;
+}
+
+.complete {
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    padding-top: 32px;
+    margin-top: 20px;
+}
+
+.complete h2,
+.postularse h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.3;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.postularse {
+    margin-top: 20px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 180px;
+    row-gap: 35px;
+    width: 75%;
+    max-width: 900px;
+    margin: 45px auto 0;
+    text-align: left;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.campo label {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.entrada {
+    display: flex;
+    align-items: center;
+}
+
+.asterisco {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffb000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.entrada input,
+.entrada select {
+    width: 280px;
+    height: 34px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d8ffb8;
+    padding: 5px 14px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    color: #555;
+}
+
+.entrada input:focus,
+.entrada select:focus {
+    outline: none;
+}
